@@ -1,0 +1,183 @@
+.Profile {
+  width: 20%;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
+}
+
+.Profile-user {
+  width: 100%;
+  padding: 10%;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 15px;
+  padding-bottom: 80px;
+}
+
+h1 {
+  line-height: 40px;
+  padding: 0;
+}
+
+.Title {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.Report {
+  font-size: 1rem;
+  display: block;
+}
+
+.Profile-name{
+  display: block;
+}
+
+.Profile-user img {
+  width: 40%;
+  border: 2px solid #f3f3f3;
+  border-radius: 90%;
+}
+
+.Profile-schedule {
+  padding: 10%;
+}
+.Profile-schedule li {
+  padding: 10px 0;
+  color:hsl(235, 45%, 61%);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.Profile-schedule li:hover {
+  opacity: 1;
+  color: #f3f3f3;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .Profile {
+    width: 100%;
+    height: 25%;
+  }
+
+  .Profile-user{
+    height: 70%;
+    display: flex;
+    padding: 30px 30px !important;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .Profile-user img{
+   width: 100px;
+   height: 100px;
+  }
+
+  h1 {
+    line-height: 17px;
+    padding: 10px;
+  }
+
+  .Report {
+    font-size:0.7rem;
+    font-weight: 300;
+  }
+
+  .Title{
+    font-size:1.3rem;
+  }
+
+
+  .Profile-name{
+    display: inline;
+  }
+
+  .Profile-schedule {
+    display: flex;
+    justify-content: flex-start;
+    align-items: last baseline;
+    height: inherit;
+    padding:inherit;
+    padding-left: 110px;
+    height: 30%;
+  }
+
+  .Profile-schedule ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+
+.Profile-schedule > ul:nth-child(1) {
+  height: 100%;
+}
+  .Profile-schedule li {
+    display: flex;
+    font-size:0.85rem;
+    padding: 0 10px;
+   }
+  
+}
+
+@media only screen and (max-width: 600px) {
+
+  .Profile-schedule {
+    justify-content: center;
+    padding: initial;
+  }
+  
+}
+
+
+@media only screen and (max-width: 375px) {
+  .Profile {
+    width: 100%;
+    height: inherit;
+  }
+
+  .Profile-user{
+    display: flex;
+    padding: 30px 30px !important;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .Profile-user img{
+   width: 50px;
+   height: 50px;
+  }
+
+  h1 {
+    line-height: 17px;
+    padding: 10px;
+  }
+
+  .Report {
+    font-size:0.7rem;
+    font-weight: 300;
+  }
+
+  .Title{
+    font-size:1.3rem;
+  }
+
+
+  .Profile-name{
+    display: inline;
+  }
+
+  .Profile-schedule {
+    justify-content: center;
+    padding: initial;
+  }
+
+  .Profile-schedule ul {
+    width: 80%;
+   display: flex;
+   justify-content: space-between;
+  }
+  .Profile-schedule li {
+    display: flex;
+    font-size:1rem;
+    padding: 0 10px;
+   }
+  
+}
